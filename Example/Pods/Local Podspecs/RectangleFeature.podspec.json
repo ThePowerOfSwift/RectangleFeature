@@ -1,0 +1,22 @@
+{
+  "name": "RectangleFeature",
+  "version": "0.1.0",
+  "summary": "A short description of RectangleFeature.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/info@mihailsalari.com/RectangleFeature",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "info@mihailsalari.com": "info@mihailsalari.com"
+  },
+  "source": {
+    "git": "https://github.com/info@mihailsalari.com/RectangleFeature.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "RectangleFeature/Classes/**/*"
+}

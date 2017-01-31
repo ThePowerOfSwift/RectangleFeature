@@ -1,0 +1,16 @@
+PODS:
+  - RectangleFeature (0.1.0)
+
+DEPENDENCIES:
+  - RectangleFeature (from `../`)
+
+EXTERNAL SOURCES:
+  RectangleFeature:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  RectangleFeature: d491f2e4fc1b29d83c7badf17cd743f4d2ae159b
+
+PODFILE CHECKSUM: ab93b464e8454f90f88f36bdb9fc1861147f93b5
+
+COCOAPODS: 1.2.0

@@ -1,0 +1,769 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		13763238DCAD494F4ACF7CA19832E71B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		360D267F93E9F234EF2602A2C24486BA /* Pods-RectangleFeature_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 591E8D41589891F9B38A1D3EA4AE7602 /* Pods-RectangleFeature_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		68404CA31EC36740457F5359846F650C /* Pods-RectangleFeature_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C608631AC83434986AF3086C2AB6AA1 /* Pods-RectangleFeature_Tests-dummy.m */; };
+		8B11CD771E40ED8D00CA8841 /* FIConstantValues.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B11CD631E40ED8D00CA8841 /* FIConstantValues.h */; };
+		8B11CD781E40ED8D00CA8841 /* FIConstantValues.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B11CD641E40ED8D00CA8841 /* FIConstantValues.m */; };
+		8B11CD791E40ED8D00CA8841 /* FIOverlayView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B11CD651E40ED8D00CA8841 /* FIOverlayView.h */; };
+		8B11CD7A1E40ED8D00CA8841 /* FIOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B11CD661E40ED8D00CA8841 /* FIOverlayView.m */; };
+		8B11CD7B1E40ED8D00CA8841 /* FIZoomView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B11CD671E40ED8D00CA8841 /* FIZoomView.h */; };
+		8B11CD7C1E40ED8D00CA8841 /* FIZoomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B11CD681E40ED8D00CA8841 /* FIZoomView.m */; };
+		8B11CD7D1E40ED8D00CA8841 /* MMCropView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B11CD691E40ED8D00CA8841 /* MMCropView.h */; };
+		8B11CD7E1E40ED8D00CA8841 /* MMCropView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B11CD6A1E40ED8D00CA8841 /* MMCropView.m */; };
+		8B11CD811E40ED8D00CA8841 /* MTGeometry.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B11CD6D1E40ED8D00CA8841 /* MTGeometry.c */; };
+		8B11CD821E40ED8D00CA8841 /* MTGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B11CD6E1E40ED8D00CA8841 /* MTGeometry.h */; };
+		8B11CD831E40ED8D00CA8841 /* SelectableRoundView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B11CD6F1E40ED8D00CA8841 /* SelectableRoundView.h */; };
+		8B11CD841E40ED8D00CA8841 /* SelectableRoundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B11CD701E40ED8D00CA8841 /* SelectableRoundView.m */; };
+		8B11CD851E40ED8D00CA8841 /* UIColor+HexRepresentation.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B11CD711E40ED8D00CA8841 /* UIColor+HexRepresentation.h */; };
+		8B11CD861E40ED8D00CA8841 /* UIColor+HexRepresentation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B11CD721E40ED8D00CA8841 /* UIColor+HexRepresentation.m */; };
+		8B11CD871E40ED8D00CA8841 /* UIImage+fixOrientation.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B11CD731E40ED8D00CA8841 /* UIImage+fixOrientation.h */; };
+		8B11CD881E40ED8D00CA8841 /* UIImage+fixOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B11CD741E40ED8D00CA8841 /* UIImage+fixOrientation.m */; };
+		8B11CD891E40ED8D00CA8841 /* UIImageView+ContentFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B11CD751E40ED8D00CA8841 /* UIImageView+ContentFrame.h */; };
+		8B11CD8A1E40ED8D00CA8841 /* UIImageView+ContentFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B11CD761E40ED8D00CA8841 /* UIImageView+ContentFrame.m */; };
+		9B6DBB3A81D41A88F90089F3439D76C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		C2055B630D4D5FABBB6D7F504369A808 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		C7CDEBCADF75D96B9C878D3E648A1608 /* RectangleFeature-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4799A90EC90DBA85F0926D6769A749F2 /* RectangleFeature-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBF3CC61BF95C1BF34943DF2803E8434 /* Pods-RectangleFeature_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 249498AAEC20F1F719B3E329C2402DE9 /* Pods-RectangleFeature_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FC3E8C53D8246BC8CEB43C1EF338976B /* RectangleFeature-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7A5AF740F014ABC0C3AEFA1CF67A19 /* RectangleFeature-dummy.m */; };
+		FDA1B8F43F4EB2B1EF5860E45D5FF8E2 /* Pods-RectangleFeature_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F34553E82424EEE02A8E2EF743C1D2FD /* Pods-RectangleFeature_Example-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C6D5930FA795775345FF41C9F022B442 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 226575F4049A5DCB61B544E8A36DCF17;
+			remoteInfo = RectangleFeature;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1D7F362F1D74CE5A9603431440358C34 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		249498AAEC20F1F719B3E329C2402DE9 /* Pods-RectangleFeature_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RectangleFeature_Tests-umbrella.h"; sourceTree = "<group>"; };
+		289BFF61ADF7A470AD447EC9AA790D32 /* RectangleFeature-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RectangleFeature-prefix.pch"; sourceTree = "<group>"; };
+		3550062187A4335F10F54D861A650787 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A195BEE96F99D13280F33512A6DE5EC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4071851D7FE4E8DBDAD4C8DC01C1C159 /* Pods-RectangleFeature_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RectangleFeature_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		4799A90EC90DBA85F0926D6769A749F2 /* RectangleFeature-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RectangleFeature-umbrella.h"; sourceTree = "<group>"; };
+		4AFD0BACD69D509C98FF27EE702A160A /* RectangleFeature.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RectangleFeature.xcconfig; sourceTree = "<group>"; };
+		4C608631AC83434986AF3086C2AB6AA1 /* Pods-RectangleFeature_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RectangleFeature_Tests-dummy.m"; sourceTree = "<group>"; };
+		591E8D41589891F9B38A1D3EA4AE7602 /* Pods-RectangleFeature_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RectangleFeature_Example-umbrella.h"; sourceTree = "<group>"; };
+		5E6405604189BBFD31C79AF0669A2808 /* Pods-RectangleFeature_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RectangleFeature_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		83C2FB9196BFE3338F52DF0F066251CE /* Pods-RectangleFeature_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RectangleFeature_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		8555653F6A796A8FD4CBAB4D16CAC835 /* Pods-RectangleFeature_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-RectangleFeature_Tests.modulemap"; sourceTree = "<group>"; };
+		89E36A5C38043D36E1650997FAD25D7A /* Pods-RectangleFeature_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RectangleFeature_Example-resources.sh"; sourceTree = "<group>"; };
+		8B11CD631E40ED8D00CA8841 /* FIConstantValues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FIConstantValues.h; sourceTree = "<group>"; };
+		8B11CD641E40ED8D00CA8841 /* FIConstantValues.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FIConstantValues.m; sourceTree = "<group>"; };
+		8B11CD651E40ED8D00CA8841 /* FIOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FIOverlayView.h; sourceTree = "<group>"; };
+		8B11CD661E40ED8D00CA8841 /* FIOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FIOverlayView.m; sourceTree = "<group>"; };
+		8B11CD671E40ED8D00CA8841 /* FIZoomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FIZoomView.h; sourceTree = "<group>"; };
+		8B11CD681E40ED8D00CA8841 /* FIZoomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FIZoomView.m; sourceTree = "<group>"; };
+		8B11CD691E40ED8D00CA8841 /* MMCropView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMCropView.h; sourceTree = "<group>"; };
+		8B11CD6A1E40ED8D00CA8841 /* MMCropView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMCropView.m; sourceTree = "<group>"; };
+		8B11CD6D1E40ED8D00CA8841 /* MTGeometry.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = MTGeometry.c; sourceTree = "<group>"; };
+		8B11CD6E1E40ED8D00CA8841 /* MTGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTGeometry.h; sourceTree = "<group>"; };
+		8B11CD6F1E40ED8D00CA8841 /* SelectableRoundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectableRoundView.h; sourceTree = "<group>"; };
+		8B11CD701E40ED8D00CA8841 /* SelectableRoundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectableRoundView.m; sourceTree = "<group>"; };
+		8B11CD711E40ED8D00CA8841 /* UIColor+HexRepresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexRepresentation.h"; sourceTree = "<group>"; };
+		8B11CD721E40ED8D00CA8841 /* UIColor+HexRepresentation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexRepresentation.m"; sourceTree = "<group>"; };
+		8B11CD731E40ED8D00CA8841 /* UIImage+fixOrientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+fixOrientation.h"; sourceTree = "<group>"; };
+		8B11CD741E40ED8D00CA8841 /* UIImage+fixOrientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+fixOrientation.m"; sourceTree = "<group>"; };
+		8B11CD751E40ED8D00CA8841 /* UIImageView+ContentFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+ContentFrame.h"; sourceTree = "<group>"; };
+		8B11CD761E40ED8D00CA8841 /* UIImageView+ContentFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+ContentFrame.m"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		95F5C3B496EAEAC0A73243869FB895B8 /* Pods-RectangleFeature_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RectangleFeature_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		9D7A5AF740F014ABC0C3AEFA1CF67A19 /* RectangleFeature-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RectangleFeature-dummy.m"; sourceTree = "<group>"; };
+		AD1EE5ADBECCC24C0FDED1EB11249876 /* RectangleFeature.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = RectangleFeature.modulemap; sourceTree = "<group>"; };
+		AFA23A86438BBA849BD0D6C1B193E474 /* Pods-RectangleFeature_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-RectangleFeature_Example.modulemap"; sourceTree = "<group>"; };
+		B034BF343507FC48160347268195B5D3 /* Pods-RectangleFeature_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RectangleFeature_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B6835D7DB5A98A7597BB5A0732DFE658 /* Pods-RectangleFeature_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RectangleFeature_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		C4654B82009C3957BBEF7FF8895EE32C /* RectangleFeature.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RectangleFeature.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7A4C48B28AE8DB7534452D64F1BB1C7 /* Pods-RectangleFeature_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RectangleFeature_Example-frameworks.sh"; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CD6D54230463BCB9DE67DB2B1D3A2A17 /* Pods_RectangleFeature_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RectangleFeature_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9C616F5B1C2A612314272FE2B06CA15 /* Pods_RectangleFeature_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RectangleFeature_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1E0EB685AAD28791715749D29BDDB69 /* Pods-RectangleFeature_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RectangleFeature_Tests-resources.sh"; sourceTree = "<group>"; };
+		E66E907AE43BBC504FAC43F144FC5019 /* Pods-RectangleFeature_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RectangleFeature_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		ECA4850504FF4B7ABBF8F774799E431A /* Pods-RectangleFeature_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RectangleFeature_Example.release.xcconfig"; sourceTree = "<group>"; };
+		F34553E82424EEE02A8E2EF743C1D2FD /* Pods-RectangleFeature_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RectangleFeature_Example-dummy.m"; sourceTree = "<group>"; };
+		FC4A70D04AC87FCC294B872FED18BCD2 /* Pods-RectangleFeature_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RectangleFeature_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		43C7F5A1E783A8325B4DB013C6C63388 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B6DBB3A81D41A88F90089F3439D76C2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		997DE76953A54BD11CC036443718960F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13763238DCAD494F4ACF7CA19832E71B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDB3A745642FA79B7EF2AE27029DC50B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2055B630D4D5FABBB6D7F504369A808 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09256A31148E65B340B906035FED3561 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D9C616F5B1C2A612314272FE2B06CA15 /* Pods_RectangleFeature_Example.framework */,
+				CD6D54230463BCB9DE67DB2B1D3A2A17 /* Pods_RectangleFeature_Tests.framework */,
+				C4654B82009C3957BBEF7FF8895EE32C /* RectangleFeature.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0B3A9A48EB2C483BC68F3310FCDC6E82 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8B11CD631E40ED8D00CA8841 /* FIConstantValues.h */,
+				8B11CD641E40ED8D00CA8841 /* FIConstantValues.m */,
+				8B11CD651E40ED8D00CA8841 /* FIOverlayView.h */,
+				8B11CD661E40ED8D00CA8841 /* FIOverlayView.m */,
+				8B11CD671E40ED8D00CA8841 /* FIZoomView.h */,
+				8B11CD681E40ED8D00CA8841 /* FIZoomView.m */,
+				8B11CD691E40ED8D00CA8841 /* MMCropView.h */,
+				8B11CD6A1E40ED8D00CA8841 /* MMCropView.m */,
+				8B11CD6D1E40ED8D00CA8841 /* MTGeometry.c */,
+				8B11CD6E1E40ED8D00CA8841 /* MTGeometry.h */,
+				8B11CD6F1E40ED8D00CA8841 /* SelectableRoundView.h */,
+				8B11CD701E40ED8D00CA8841 /* SelectableRoundView.m */,
+				8B11CD711E40ED8D00CA8841 /* UIColor+HexRepresentation.h */,
+				8B11CD721E40ED8D00CA8841 /* UIColor+HexRepresentation.m */,
+				8B11CD731E40ED8D00CA8841 /* UIImage+fixOrientation.h */,
+				8B11CD741E40ED8D00CA8841 /* UIImage+fixOrientation.m */,
+				8B11CD751E40ED8D00CA8841 /* UIImageView+ContentFrame.h */,
+				8B11CD761E40ED8D00CA8841 /* UIImageView+ContentFrame.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		2F9CC10553EBBBA587E0BF8BC573CBE7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1D7F362F1D74CE5A9603431440358C34 /* Info.plist */,
+				AD1EE5ADBECCC24C0FDED1EB11249876 /* RectangleFeature.modulemap */,
+				4AFD0BACD69D509C98FF27EE702A160A /* RectangleFeature.xcconfig */,
+				9D7A5AF740F014ABC0C3AEFA1CF67A19 /* RectangleFeature-dummy.m */,
+				289BFF61ADF7A470AD447EC9AA790D32 /* RectangleFeature-prefix.pch */,
+				4799A90EC90DBA85F0926D6769A749F2 /* RectangleFeature-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/RectangleFeature";
+			sourceTree = "<group>";
+		};
+		327C5DFD1B127C22722EC5278364D117 /* Pods-RectangleFeature_Example */ = {
+			isa = PBXGroup;
+			children = (
+				3A195BEE96F99D13280F33512A6DE5EC /* Info.plist */,
+				AFA23A86438BBA849BD0D6C1B193E474 /* Pods-RectangleFeature_Example.modulemap */,
+				FC4A70D04AC87FCC294B872FED18BCD2 /* Pods-RectangleFeature_Example-acknowledgements.markdown */,
+				95F5C3B496EAEAC0A73243869FB895B8 /* Pods-RectangleFeature_Example-acknowledgements.plist */,
+				F34553E82424EEE02A8E2EF743C1D2FD /* Pods-RectangleFeature_Example-dummy.m */,
+				C7A4C48B28AE8DB7534452D64F1BB1C7 /* Pods-RectangleFeature_Example-frameworks.sh */,
+				89E36A5C38043D36E1650997FAD25D7A /* Pods-RectangleFeature_Example-resources.sh */,
+				591E8D41589891F9B38A1D3EA4AE7602 /* Pods-RectangleFeature_Example-umbrella.h */,
+				E66E907AE43BBC504FAC43F144FC5019 /* Pods-RectangleFeature_Example.debug.xcconfig */,
+				ECA4850504FF4B7ABBF8F774799E431A /* Pods-RectangleFeature_Example.release.xcconfig */,
+			);
+			name = "Pods-RectangleFeature_Example";
+			path = "Target Support Files/Pods-RectangleFeature_Example";
+			sourceTree = "<group>";
+		};
+		6C2DD37E72EAA182702C3047AF63833B /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C915F3AA2634ABCDF655D7CE4091ECB8 /* RectangleFeature */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				6C2DD37E72EAA182702C3047AF63833B /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				09256A31148E65B340B906035FED3561 /* Products */,
+				EF41F5B80779A66CBAA78C799D4D09A2 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF33FBFF17E69AE103373D3B36A860D3 /* Pods-RectangleFeature_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				3550062187A4335F10F54D861A650787 /* Info.plist */,
+				8555653F6A796A8FD4CBAB4D16CAC835 /* Pods-RectangleFeature_Tests.modulemap */,
+				B034BF343507FC48160347268195B5D3 /* Pods-RectangleFeature_Tests-acknowledgements.markdown */,
+				83C2FB9196BFE3338F52DF0F066251CE /* Pods-RectangleFeature_Tests-acknowledgements.plist */,
+				4C608631AC83434986AF3086C2AB6AA1 /* Pods-RectangleFeature_Tests-dummy.m */,
+				4071851D7FE4E8DBDAD4C8DC01C1C159 /* Pods-RectangleFeature_Tests-frameworks.sh */,
+				E1E0EB685AAD28791715749D29BDDB69 /* Pods-RectangleFeature_Tests-resources.sh */,
+				249498AAEC20F1F719B3E329C2402DE9 /* Pods-RectangleFeature_Tests-umbrella.h */,
+				B6835D7DB5A98A7597BB5A0732DFE658 /* Pods-RectangleFeature_Tests.debug.xcconfig */,
+				5E6405604189BBFD31C79AF0669A2808 /* Pods-RectangleFeature_Tests.release.xcconfig */,
+			);
+			name = "Pods-RectangleFeature_Tests";
+			path = "Target Support Files/Pods-RectangleFeature_Tests";
+			sourceTree = "<group>";
+		};
+		C915F3AA2634ABCDF655D7CE4091ECB8 /* RectangleFeature */ = {
+			isa = PBXGroup;
+			children = (
+				EF82D4E4538452E357467B901E863AF6 /* RectangleFeature */,
+				2F9CC10553EBBBA587E0BF8BC573CBE7 /* Support Files */,
+			);
+			name = RectangleFeature;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		EF41F5B80779A66CBAA78C799D4D09A2 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				327C5DFD1B127C22722EC5278364D117 /* Pods-RectangleFeature_Example */,
+				BF33FBFF17E69AE103373D3B36A860D3 /* Pods-RectangleFeature_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		EF82D4E4538452E357467B901E863AF6 /* RectangleFeature */ = {
+			isa = PBXGroup;
+			children = (
+				0B3A9A48EB2C483BC68F3310FCDC6E82 /* Classes */,
+			);
+			path = RectangleFeature;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2554F1ECA9C12DF54C2FCE6EC4A8D910 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBF3CC61BF95C1BF34943DF2803E8434 /* Pods-RectangleFeature_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A925A78642A721D43C78DCD1633799D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7CDEBCADF75D96B9C878D3E648A1608 /* RectangleFeature-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1EA783956CB7A6596510E2292E5AD86 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				360D267F93E9F234EF2602A2C24486BA /* Pods-RectangleFeature_Example-umbrella.h in Headers */,
+				8B11CD831E40ED8D00CA8841 /* SelectableRoundView.h in Headers */,
+				8B11CD891E40ED8D00CA8841 /* UIImageView+ContentFrame.h in Headers */,
+				8B11CD7B1E40ED8D00CA8841 /* FIZoomView.h in Headers */,
+				8B11CD821E40ED8D00CA8841 /* MTGeometry.h in Headers */,
+				8B11CD871E40ED8D00CA8841 /* UIImage+fixOrientation.h in Headers */,
+				8B11CD851E40ED8D00CA8841 /* UIColor+HexRepresentation.h in Headers */,
+				8B11CD771E40ED8D00CA8841 /* FIConstantValues.h in Headers */,
+				8B11CD7D1E40ED8D00CA8841 /* MMCropView.h in Headers */,
+				8B11CD791E40ED8D00CA8841 /* FIOverlayView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		226575F4049A5DCB61B544E8A36DCF17 /* RectangleFeature */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E27030A8988A60908290456F3BF57F52 /* Build configuration list for PBXNativeTarget "RectangleFeature" */;
+			buildPhases = (
+				A89AD2A1B81D877FD6D3D2D844E186D6 /* Sources */,
+				BDB3A745642FA79B7EF2AE27029DC50B /* Frameworks */,
+				4A925A78642A721D43C78DCD1633799D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RectangleFeature;
+			productName = RectangleFeature;
+			productReference = C4654B82009C3957BBEF7FF8895EE32C /* RectangleFeature.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4B6A0989E6E296796B9F45672BD39A0A /* Pods-RectangleFeature_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4835465DC118B452E7A62E63F29A1FCD /* Build configuration list for PBXNativeTarget "Pods-RectangleFeature_Example" */;
+			buildPhases = (
+				E6992A5BDB611A937A7F021AA1E322C3 /* Sources */,
+				43C7F5A1E783A8325B4DB013C6C63388 /* Frameworks */,
+				F1EA783956CB7A6596510E2292E5AD86 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D307F3494FE4E191ABCB374BB05CE2D2 /* PBXTargetDependency */,
+			);
+			name = "Pods-RectangleFeature_Example";
+			productName = "Pods-RectangleFeature_Example";
+			productReference = D9C616F5B1C2A612314272FE2B06CA15 /* Pods_RectangleFeature_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		60E0359EE73C24957E8B24655D895033 /* Pods-RectangleFeature_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD283D00E624A6D85D8C5B8688B5E5C3 /* Build configuration list for PBXNativeTarget "Pods-RectangleFeature_Tests" */;
+			buildPhases = (
+				B8485192112BF5B9E4583FC6AA108F3D /* Sources */,
+				997DE76953A54BD11CC036443718960F /* Frameworks */,
+				2554F1ECA9C12DF54C2FCE6EC4A8D910 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-RectangleFeature_Tests";
+			productName = "Pods-RectangleFeature_Tests";
+			productReference = CD6D54230463BCB9DE67DB2B1D3A2A17 /* Pods_RectangleFeature_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 09256A31148E65B340B906035FED3561 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4B6A0989E6E296796B9F45672BD39A0A /* Pods-RectangleFeature_Example */,
+				60E0359EE73C24957E8B24655D895033 /* Pods-RectangleFeature_Tests */,
+				226575F4049A5DCB61B544E8A36DCF17 /* RectangleFeature */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A89AD2A1B81D877FD6D3D2D844E186D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC3E8C53D8246BC8CEB43C1EF338976B /* RectangleFeature-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8485192112BF5B9E4583FC6AA108F3D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68404CA31EC36740457F5359846F650C /* Pods-RectangleFeature_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6992A5BDB611A937A7F021AA1E322C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B11CD881E40ED8D00CA8841 /* UIImage+fixOrientation.m in Sources */,
+				8B11CD811E40ED8D00CA8841 /* MTGeometry.c in Sources */,
+				8B11CD781E40ED8D00CA8841 /* FIConstantValues.m in Sources */,
+				FDA1B8F43F4EB2B1EF5860E45D5FF8E2 /* Pods-RectangleFeature_Example-dummy.m in Sources */,
+				8B11CD7C1E40ED8D00CA8841 /* FIZoomView.m in Sources */,
+				8B11CD861E40ED8D00CA8841 /* UIColor+HexRepresentation.m in Sources */,
+				8B11CD7E1E40ED8D00CA8841 /* MMCropView.m in Sources */,
+				8B11CD7A1E40ED8D00CA8841 /* FIOverlayView.m in Sources */,
+				8B11CD8A1E40ED8D00CA8841 /* UIImageView+ContentFrame.m in Sources */,
+				8B11CD841E40ED8D00CA8841 /* SelectableRoundView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D307F3494FE4E191ABCB374BB05CE2D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RectangleFeature;
+			target = 226575F4049A5DCB61B544E8A36DCF17 /* RectangleFeature */;
+			targetProxy = C6D5930FA795775345FF41C9F022B442 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		67A88708207A4006299AF1A04A8040E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E6405604189BBFD31C79AF0669A2808 /* Pods-RectangleFeature_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RectangleFeature_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RectangleFeature_Tests/Pods-RectangleFeature_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_RectangleFeature_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7D0DBAC34081369C8319A760ACD272A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E66E907AE43BBC504FAC43F144FC5019 /* Pods-RectangleFeature_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RectangleFeature_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RectangleFeature_Example/Pods-RectangleFeature_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_RectangleFeature_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8A14C436D65FA8C21759719727204B50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AFD0BACD69D509C98FF27EE702A160A /* RectangleFeature.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RectangleFeature/RectangleFeature-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RectangleFeature/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RectangleFeature/RectangleFeature.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = RectangleFeature;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8DED8AD26D381A6ACFF202E5217EC498 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		95C355EB0569A2DB5C6F25D19830959E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AFD0BACD69D509C98FF27EE702A160A /* RectangleFeature.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RectangleFeature/RectangleFeature-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RectangleFeature/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RectangleFeature/RectangleFeature.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = RectangleFeature;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9E1E4E48AF2EAB23169E611BF694090A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		E6BB13EE3E0B61BB76D433095D7F40D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECA4850504FF4B7ABBF8F774799E431A /* Pods-RectangleFeature_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RectangleFeature_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RectangleFeature_Example/Pods-RectangleFeature_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_RectangleFeature_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E6DFAEB5B7495AC0CA34FA4B8CCA62BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6835D7DB5A98A7597BB5A0732DFE658 /* Pods-RectangleFeature_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RectangleFeature_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RectangleFeature_Tests/Pods-RectangleFeature_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_RectangleFeature_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E1E4E48AF2EAB23169E611BF694090A /* Debug */,
+				8DED8AD26D381A6ACFF202E5217EC498 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4835465DC118B452E7A62E63F29A1FCD /* Build configuration list for PBXNativeTarget "Pods-RectangleFeature_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D0DBAC34081369C8319A760ACD272A0 /* Debug */,
+				E6BB13EE3E0B61BB76D433095D7F40D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD283D00E624A6D85D8C5B8688B5E5C3 /* Build configuration list for PBXNativeTarget "Pods-RectangleFeature_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6DFAEB5B7495AC0CA34FA4B8CCA62BA /* Debug */,
+				67A88708207A4006299AF1A04A8040E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E27030A8988A60908290456F3BF57F52 /* Build configuration list for PBXNativeTarget "RectangleFeature" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A14C436D65FA8C21759719727204B50 /* Debug */,
+				95C355EB0569A2DB5C6F25D19830959E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

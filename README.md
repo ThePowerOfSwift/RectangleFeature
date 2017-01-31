@@ -17,12 +17,12 @@ RectangleFeature is available through [CocoaPods](http://cocoapods.org). To inst
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "RectangleFeature"
+pod "RectangleFeature", :git => 'https://github.com/ThePowerOfSwift/RectangleFeature.git'
 ```
 
 ## Author
 
-info@mihailsalari.com, info@mihailsalari.com
+The Power of Swift, thepowerofswift@mihailsalari.com
 
 ## License
 

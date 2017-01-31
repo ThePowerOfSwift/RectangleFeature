@@ -1,0 +1,6 @@
+framework module Pods_RectangleFeature_Tests {
+  umbrella header "Pods-RectangleFeature_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
