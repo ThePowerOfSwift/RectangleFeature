@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'RectangleFeature_Example' do
+  pod 'RectangleFeature', :path => '../'
+
+  target 'RectangleFeature_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
