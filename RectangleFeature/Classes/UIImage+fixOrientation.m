@@ -19,6 +19,12 @@
     return src;
 }
 
+-(UIImage *)fixOrientation:(UIImage *)image
+{
+    UIImage *src = [[UIImage alloc] initWithCGImage: (__bridge CGImageRef _Nonnull)(image)
+                                              scale: 1.0
+                                        orientation: UIImageOrientationRight];
+}
 +(UIImage*)renderImage:(NSString *)imagName{
     return [[UIImage imageNamed:imagName] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
 }
