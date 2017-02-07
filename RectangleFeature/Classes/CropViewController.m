@@ -207,15 +207,6 @@
     [_headerView setBackgroundColor:[FIConstantValues standartBackgroundColor]];
     [self.view addSubview:_headerView];
     
-    UILabel* screenTitleLabel = [[UILabel alloc] initWithFrame:CGRectMake((self.view.frame.size.width - 150.0)/2.0, 33.0, 150.0, 18)];
-    screenTitleLabel.translatesAutoresizingMaskIntoConstraints = NO;
-    [screenTitleLabel setText:@"Crop image"];
-    [screenTitleLabel setTextAlignment:NSTextAlignmentCenter];
-    [screenTitleLabel setFont:[UIFont systemFontOfSize:16]];
-    [screenTitleLabel setTextColor:[UIColor whiteColor]];
-    [_headerView addSubview:screenTitleLabel];
-    
-    
     NSLayoutConstraint* headerTop = [NSLayoutConstraint constraintWithItem:_headerView
                                                                  attribute:NSLayoutAttributeTop
                                                                  relatedBy:NSLayoutRelationEqual
@@ -244,28 +235,6 @@
     NSArray* headerViewConstraints = [NSArray arrayWithObjects:headerTop, headerHeight, headerLeft, headerRight, nil];
     
     [self.view addConstraints:headerViewConstraints];
-    
-    
-    //
-    
-    NSLayoutConstraint* titleTop = [NSLayoutConstraint constraintWithItem:screenTitleLabel
-                                                                attribute:NSLayoutAttributeTop
-                                                                relatedBy:NSLayoutRelationEqual
-                                                                   toItem:_headerView
-                                                                attribute:NSLayoutAttributeTop
-                                                               multiplier:1.0 constant:33.0];
-    
-    NSLayoutConstraint* titleCenter = [NSLayoutConstraint constraintWithItem:screenTitleLabel
-                                                                   attribute:NSLayoutAttributeCenterX
-                                                                   relatedBy:NSLayoutRelationEqual
-                                                                      toItem:_headerView
-                                                                   attribute:NSLayoutAttributeCenterX
-                                                                  multiplier:1.0 constant:0.0];
-    
-    NSArray* titleConstraints = [NSArray arrayWithObjects:titleTop, titleCenter, nil];
-    
-    [_headerView addConstraints:titleConstraints];
-    
 }
     
 -(void)initializeFooterView{

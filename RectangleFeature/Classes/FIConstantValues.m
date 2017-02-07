@@ -32,7 +32,7 @@
 
 +(CGFloat)pictureSelectorFooterViewHeight{
     
-    return 74.0f;
+    return 44.0f;
 }
 
 +(CGFloat)processFooterViewHeight{
