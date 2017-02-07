@@ -18,7 +18,7 @@
 
 +(UIColor *)standartBackgroundColor{
     
-    return [UIColor lightGrayColor];
+    return [UIColor whiteColor];
 }
 
 +(UIColor *)doneButtonColor{

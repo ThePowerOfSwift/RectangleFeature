@@ -17,15 +17,12 @@
     
 -(void)cropperViewdidCropped:(UIImage *)croppedImage cropVC:(CropViewController *)cropVC;
     
-    @end
+@end
 
 @interface CropViewController : UIViewController{
     
     CIImage* croppedImage;
     UIImageView* _detectedImage;
-    
-    UIView* _headerView;
-    UIView* _footerView;
     
     UIButton* _magnetButton;
     BOOL _magnetEnabled;
@@ -37,8 +34,11 @@
     CGFloat _rotatedDegree;
 }
     
-    @property(nonatomic, strong) UIImage* originalImage;
-    @property(nonatomic, weak) id<CropDelegate> delegate;
+@property(nonatomic, strong) UIImage* originalImage;
+@property(nonatomic, weak) id<CropDelegate> delegate;
+
+@property (strong, nonatomic) UIView *headerView;
+@property (strong, nonatomic) UIView *footerView;
     
-    @end
+@end
 

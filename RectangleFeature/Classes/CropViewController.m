@@ -54,7 +54,7 @@
     
     [self initializeHeaderView];
     [self initializeFooterView];
-    
+    [self setupUI];
     
     NSLayoutConstraint* imgTop = [NSLayoutConstraint constraintWithItem:_detectedImage
                                                               attribute:NSLayoutAttributeTop
@@ -88,6 +88,7 @@
     
 }
     
+-(void) setupUI {}
     
 -(void)magnetActivated{
     
