@@ -41,6 +41,8 @@
 @property (strong, nonatomic) UIView *footerView;
 
 -(void) findRectangle;
+-(void) findRectangleInImage;
+
 -(void) selectAllArea;
 -(UIImage *) getCroppedImage;
 -(void)autoRectangleDetect;

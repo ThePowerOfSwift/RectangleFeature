@@ -87,7 +87,19 @@
     
     
 }
-    
+
+
+-(void) findRectangleInImage {
+    if (_detectedRectangleFeature) {
+        
+        [self magnetActivated];
+        
+    }else{
+        
+        [self magnetDeactivated];
+    }
+}
+
 -(void) setupUI {}
 
 -(void) findRectangle {

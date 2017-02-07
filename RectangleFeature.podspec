@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RectangleFeature'
-  s.version          = '0.2.8'
+  s.version          = '0.2.9'
 s.summary          = 'Information about a rectangular region detected in a still or video image.'
 
 # This description is used to generate tags and improve search results.
