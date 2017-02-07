@@ -89,7 +89,71 @@
 }
     
 -(void) setupUI {}
+
+-(void) findRectangle {
+    if (_detectedRectangleFeature) {
+        
+        [self magnetActivated];
+        
+    }else{
+        
+        [self magnetDeactivated];
+    }
+}
+
+-(void) selectAllArea {
+    static float margin = 00.0f;
+    float absoluteHeight = self.originalImage.size.height / _detectedImage.frame.size.height;
+    float absoluteWidth = self.originalImage.size.width / _detectedImage.frame.size.width;
     
+    if (!_overlayView) {
+        
+        _overlayView = [[FIOverlayView alloc] initWithFrame:CGRectZero];
+        _overlayView.translatesAutoresizingMaskIntoConstraints = NO;
+        [_detectedImage addSubview:_overlayView];
+        
+        NSLayoutConstraint* imgTop = [NSLayoutConstraint constraintWithItem:_overlayView
+                                                                  attribute:NSLayoutAttributeTop
+                                                                  relatedBy:NSLayoutRelationEqual
+                                                                     toItem:_detectedImage
+                                                                  attribute:NSLayoutAttributeTop
+                                                                 multiplier:1.0 constant:0.0];
+        NSLayoutConstraint* imgLeft = [NSLayoutConstraint constraintWithItem:_overlayView
+                                                                   attribute:NSLayoutAttributeLeft
+                                                                   relatedBy:NSLayoutRelationEqual
+                                                                      toItem:_detectedImage
+                                                                   attribute:NSLayoutAttributeLeft
+                                                                  multiplier:1.0 constant:0.0];
+        NSLayoutConstraint* imgRight = [NSLayoutConstraint constraintWithItem:_overlayView
+                                                                    attribute:NSLayoutAttributeRight
+                                                                    relatedBy:NSLayoutRelationEqual
+                                                                       toItem:_detectedImage
+                                                                    attribute:NSLayoutAttributeRight
+                                                                   multiplier:1.0 constant:0.0];
+        NSLayoutConstraint* imgBtm = [NSLayoutConstraint constraintWithItem:_overlayView
+                                                                  attribute:NSLayoutAttributeBottom
+                                                                  relatedBy:NSLayoutRelationEqual
+                                                                     toItem:_detectedImage
+                                                                  attribute:NSLayoutAttributeBottom
+                                                                 multiplier:1.0 constant:0.0];
+        
+        NSArray* imgConstraints = [NSArray arrayWithObjects:imgTop, imgBtm, imgLeft, imgRight, nil];
+        
+        [_detectedImage addConstraints:imgConstraints];
+        
+    }
+    
+    _overlayView.absoluteHeight = absoluteHeight;
+    _overlayView.absoluteWidth = absoluteWidth;
+    
+    _overlayView.topLeftPath = CGPointMake(margin, margin);
+    _overlayView.topRightPath = CGPointMake(_detectedImage.frame.size.width - margin,margin);
+    _overlayView.bottomLeftPath = CGPointMake(margin, _detectedImage.frame.size.height - margin);
+    _overlayView.bottomRightPath = CGPointMake(_detectedImage.frame.size.width - margin, _detectedImage.frame.size.height - margin);
+    
+    [_overlayView initializeSubView];
+}
+
 -(void)magnetActivated{
     
     float absoluteHeight = self.originalImage.size.height / _detectedImage.frame.size.height;
@@ -196,7 +260,6 @@
     _overlayView.bottomRightPath = CGPointMake(_detectedImage.frame.size.width - margin, _detectedImage.frame.size.height - margin);
     
     [_overlayView initializeSubView];
-    
 }
     
     
@@ -289,7 +352,7 @@
             
         }else{
             
-            UIAlertView* alertView = [[UIAlertView alloc] initWithTitle:@"Warning" message:@"We can't detect document please retake." delegate:nil cancelButtonTitle:nil otherButtonTitles:@"Ok", nil];
+            UIAlertView* alertView = [[UIAlertView alloc] initWithTitle:@"Warning" message:@"We can't detect document please retake." delegate:nil cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
             [alertView show];
             _magnetButton.enabled = NO;
             _magnetEnabled = NO;
@@ -298,13 +361,18 @@
     }
 }
     
--(void)confirmButtonClicked{
+-(void)confirmButtonClicked {
     
     [self.delegate cropperViewdidCropped:[_overlayView cropImage:self.originalImage] cropVC:self];
     [self dismissViewControllerAnimated:NO completion:nil];
     
     
 }
+
+-(UIImage *) getCroppedImage {
+    return [_overlayView cropImage:self.originalImage];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

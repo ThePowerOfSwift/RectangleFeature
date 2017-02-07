@@ -42,5 +42,9 @@
 
 -(void) setupUI;
 
+-(void) findRectangle;
+-(void) selectAllArea;
+-(UIImage *) getCroppedImage;
+-(void)autoRectangleDetect;
 @end
 
