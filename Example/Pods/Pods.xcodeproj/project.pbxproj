@@ -165,10 +165,10 @@
 				8B11CD741E40ED8D00CA8841 /* UIImage+fixOrientation.m */,
 				8B11CD751E40ED8D00CA8841 /* UIImageView+ContentFrame.h */,
 				8B11CD761E40ED8D00CA8841 /* UIImageView+ContentFrame.m */,
-				8BEAAB901E49DC58003C088B /* CropViewController.h */,
-				8BEAAB911E49DC58003C088B /* CropViewController.m */,
 				8BEAAB941E49DC7B003C088B /* FIImageRectangleDetector.h */,
 				8BEAAB951E49DC7B003C088B /* FIImageRectangleDetector.m */,
+				8BEAAB901E49DC58003C088B /* CropViewController.h */,
+				8BEAAB911E49DC58003C088B /* CropViewController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";

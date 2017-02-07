@@ -39,6 +39,8 @@
 
 @property (strong, nonatomic) UIView *headerView;
 @property (strong, nonatomic) UIView *footerView;
-    
+
+-(void) setupUI;
+
 @end
 
