@@ -28,6 +28,10 @@
 		8B11CD881E40ED8D00CA8841 /* UIImage+fixOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B11CD741E40ED8D00CA8841 /* UIImage+fixOrientation.m */; };
 		8B11CD891E40ED8D00CA8841 /* UIImageView+ContentFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B11CD751E40ED8D00CA8841 /* UIImageView+ContentFrame.h */; };
 		8B11CD8A1E40ED8D00CA8841 /* UIImageView+ContentFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B11CD761E40ED8D00CA8841 /* UIImageView+ContentFrame.m */; };
+		8BEAAB921E49DC58003C088B /* CropViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BEAAB901E49DC58003C088B /* CropViewController.h */; };
+		8BEAAB931E49DC58003C088B /* CropViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BEAAB911E49DC58003C088B /* CropViewController.m */; };
+		8BEAAB961E49DC7B003C088B /* FIImageRectangleDetector.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BEAAB941E49DC7B003C088B /* FIImageRectangleDetector.h */; };
+		8BEAAB971E49DC7B003C088B /* FIImageRectangleDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BEAAB951E49DC7B003C088B /* FIImageRectangleDetector.m */; };
 		9B6DBB3A81D41A88F90089F3439D76C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		C2055B630D4D5FABBB6D7F504369A808 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		C7CDEBCADF75D96B9C878D3E648A1608 /* RectangleFeature-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4799A90EC90DBA85F0926D6769A749F2 /* RectangleFeature-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -79,6 +83,10 @@
 		8B11CD741E40ED8D00CA8841 /* UIImage+fixOrientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+fixOrientation.m"; sourceTree = "<group>"; };
 		8B11CD751E40ED8D00CA8841 /* UIImageView+ContentFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+ContentFrame.h"; sourceTree = "<group>"; };
 		8B11CD761E40ED8D00CA8841 /* UIImageView+ContentFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+ContentFrame.m"; sourceTree = "<group>"; };
+		8BEAAB901E49DC58003C088B /* CropViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CropViewController.h; sourceTree = "<group>"; };
+		8BEAAB911E49DC58003C088B /* CropViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CropViewController.m; sourceTree = "<group>"; };
+		8BEAAB941E49DC7B003C088B /* FIImageRectangleDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FIImageRectangleDetector.h; sourceTree = "<group>"; };
+		8BEAAB951E49DC7B003C088B /* FIImageRectangleDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FIImageRectangleDetector.m; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		95F5C3B496EAEAC0A73243869FB895B8 /* Pods-RectangleFeature_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RectangleFeature_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		9D7A5AF740F014ABC0C3AEFA1CF67A19 /* RectangleFeature-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RectangleFeature-dummy.m"; sourceTree = "<group>"; };
@@ -157,6 +165,10 @@
 				8B11CD741E40ED8D00CA8841 /* UIImage+fixOrientation.m */,
 				8B11CD751E40ED8D00CA8841 /* UIImageView+ContentFrame.h */,
 				8B11CD761E40ED8D00CA8841 /* UIImageView+ContentFrame.m */,
+				8BEAAB901E49DC58003C088B /* CropViewController.h */,
+				8BEAAB911E49DC58003C088B /* CropViewController.m */,
+				8BEAAB941E49DC7B003C088B /* FIImageRectangleDetector.h */,
+				8BEAAB951E49DC7B003C088B /* FIImageRectangleDetector.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -299,11 +311,13 @@
 				360D267F93E9F234EF2602A2C24486BA /* Pods-RectangleFeature_Example-umbrella.h in Headers */,
 				8B11CD831E40ED8D00CA8841 /* SelectableRoundView.h in Headers */,
 				8B11CD891E40ED8D00CA8841 /* UIImageView+ContentFrame.h in Headers */,
+				8BEAAB921E49DC58003C088B /* CropViewController.h in Headers */,
 				8B11CD7B1E40ED8D00CA8841 /* FIZoomView.h in Headers */,
 				8B11CD821E40ED8D00CA8841 /* MTGeometry.h in Headers */,
 				8B11CD871E40ED8D00CA8841 /* UIImage+fixOrientation.h in Headers */,
 				8B11CD851E40ED8D00CA8841 /* UIColor+HexRepresentation.h in Headers */,
 				8B11CD771E40ED8D00CA8841 /* FIConstantValues.h in Headers */,
+				8BEAAB961E49DC7B003C088B /* FIImageRectangleDetector.h in Headers */,
 				8B11CD7D1E40ED8D00CA8841 /* MMCropView.h in Headers */,
 				8B11CD791E40ED8D00CA8841 /* FIOverlayView.h in Headers */,
 			);
@@ -372,6 +386,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					4B6A0989E6E296796B9F45672BD39A0A = {
+						LastSwiftMigration = 0820;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -415,6 +434,7 @@
 			files = (
 				8B11CD881E40ED8D00CA8841 /* UIImage+fixOrientation.m in Sources */,
 				8B11CD811E40ED8D00CA8841 /* MTGeometry.c in Sources */,
+				8BEAAB931E49DC58003C088B /* CropViewController.m in Sources */,
 				8B11CD781E40ED8D00CA8841 /* FIConstantValues.m in Sources */,
 				FDA1B8F43F4EB2B1EF5860E45D5FF8E2 /* Pods-RectangleFeature_Example-dummy.m in Sources */,
 				8B11CD7C1E40ED8D00CA8841 /* FIZoomView.m in Sources */,
@@ -422,6 +442,7 @@
 				8B11CD7E1E40ED8D00CA8841 /* MMCropView.m in Sources */,
 				8B11CD7A1E40ED8D00CA8841 /* FIOverlayView.m in Sources */,
 				8B11CD8A1E40ED8D00CA8841 /* UIImageView+ContentFrame.m in Sources */,
+				8BEAAB971E49DC7B003C088B /* FIImageRectangleDetector.m in Sources */,
 				8B11CD841E40ED8D00CA8841 /* SelectableRoundView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -477,6 +498,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E66E907AE43BBC504FAC43F144FC5019 /* Pods-RectangleFeature_Example.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -502,6 +524,8 @@
 				PRODUCT_NAME = Pods_RectangleFeature_Example;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -658,6 +682,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = ECA4850504FF4B7ABBF8F774799E431A /* Pods-RectangleFeature_Example.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -683,6 +708,7 @@
 				PRODUCT_NAME = Pods_RectangleFeature_Example;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";

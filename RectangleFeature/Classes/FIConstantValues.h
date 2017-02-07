@@ -9,13 +9,6 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-typedef enum {
-    ImageFilterTypeColorful,
-    ImageFilterTypeGrayScale,
-    ImageFilterTypeBlackAndWhite
-    
-} ImageFilterType;
-
 @interface FIConstantValues : NSObject
 
 +(UIColor *)themeColor;
