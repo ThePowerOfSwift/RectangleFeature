@@ -40,11 +40,10 @@
 @property (strong, nonatomic) UIView *headerView;
 @property (strong, nonatomic) UIView *footerView;
 
--(void) setupUI;
-
 -(void) findRectangle;
 -(void) selectAllArea;
 -(UIImage *) getCroppedImage;
 -(void)autoRectangleDetect;
+-(void) setupUI;
 @end
 
